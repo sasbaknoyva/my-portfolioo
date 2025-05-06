@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: #3498db;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #3498db;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #3498db;
+}
+
+.mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.icon.sun-icon {
+    display: inline-block;
+}
+
+.icon.moon-icon {
+    display: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.home-section {
+    width: 100%;
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+
+.logo-container h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 200px;
+    width: 100%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+}
+
+.text h1 {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: #3498db;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.text p {
+    font-size: 18px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 60px;
+    background-color: #f9f9f9;
+    width: 90%;
+    max-width: 1300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-info {
+    max-width: 600px;
+}
+
+.about-info h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons i {
+    font-size: 35px;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+@keyframes fall {
+    0% {
+        top: -10px;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 60px;
+    background-color: #f9f9f9;
+    width: 90%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #skills h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .skill {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 20px;
+    text-align: left; /* Align the skill titles to the left */
+  }
+  
+  .skill h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0;
+    transition: width 2s ease-in-out;
+  }
+  
+  .html {
+    background-color: #2669e4;
+    width: 100%; /* Adjust based on your skill level */
+  }
+  
+  .css {
+    background-color: #15b670;
+    width: 80%;
+  }
+
+  .python {
+    background-color: #a5530c;
+    width: 90%;
+  }
+  
+  .cpp {
+    background-color: #c92d06;
+    width: 20%;
+  }
+  
+  .java {
+    background-color: #5f0096;
+    width: 1%;
+  }
+  .js {
+    background-color: #aff71e;
+    width: 1%;
+  }
+  
